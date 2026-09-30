@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
 import { useSEO } from "@/hooks/useSEO";
@@ -10,7 +10,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import CTABanner from "@/components/CTABanner";
 
-const heroLines = ["La tecnologia che", "fa crescere", "la tua attività."];
+const heroLines = ["La tecnologia che", "fa crescere", "la tua attivitÃ ."];
 
 const lineVariants = {
   hidden: { y: "115%" },
@@ -51,7 +51,7 @@ const Hero = () => (
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand/30 bg-white/70 px-4 py-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-dark backdrop-blur"
           >
             <Sparkles className="h-3.5 w-3.5" />
-            Informatic Point · Molfetta (BA)
+            Informatic Point Â· Molfetta (BA)
           </motion.p>
 
           <h1
@@ -81,7 +81,7 @@ const Hero = () => (
           >
             Siti web, assistenza informatica, grafica, CAD e software su misura
             per privati, professionisti e piccole imprese. Un unico punto di
-            riferimento digitale — semplice, solido e affidabile.
+            riferimento digitale â€” semplice, solido e affidabile.
           </motion.p>
 
           <motion.div
@@ -117,13 +117,12 @@ const Hero = () => (
             className="mt-6 flex items-center gap-2 text-sm text-slate-600"
           >
             <ShieldCheck className="h-4 w-4 text-brand" />
-            Preventivo gratuito e senza impegno · Risposta rapida garantita
+            Preventivo gratuito e senza impegno Â· Risposta rapida garantita
           </motion.p>
         </div>
       </div>
     </section>
-  );
-};
+);
 
 const Why = () => (
   <section className="relative overflow-hidden bg-ink">
@@ -132,7 +131,7 @@ const Why = () => (
       <div>
         <SectionHeading
           light
-          eyebrow="Perché Informatic Point"
+          eyebrow="PerchÃ© Informatic Point"
           title="Un referente tecnico locale, non un help desk anonimo"
           subtitle="Mi trovi a Molfetta: lavoro con chi ha fiducia in un servizio umano, diretto e professionale."
         />
@@ -165,7 +164,7 @@ const Why = () => (
             className="relative aspect-[4/3] w-full rounded-[1.75rem] object-cover"
           />
           <div className="absolute bottom-5 left-5 rounded-full border border-white/20 bg-ink/80 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.2em] text-paper backdrop-blur">
-            Molfetta · Puglia
+            Molfetta Â· Puglia
           </div>
         </div>
       </Reveal>
@@ -193,7 +192,7 @@ const Testimonials = () => (
               ))}
             </div>
             <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-slate-700">
-              “{t.quote}”
+              â€œ{t.quote}â€
             </blockquote>
             <figcaption className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-5">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand to-iris font-display text-sm font-bold text-white">
@@ -211,7 +210,7 @@ const Testimonials = () => (
   </section>
 );
 
-export const HomePage = () => {
+const HomePage = () => {
   useSEO({
     title: "Informatic Point | Servizi Informatici e Digitali a Molfetta",
     description:
@@ -226,7 +225,7 @@ export const HomePage = () => {
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <SectionHeading
             eyebrow="Servizi"
-            title="Tutto ciò di cui la tua attività ha bisogno, in un solo punto"
+            title="Tutto ciÃ² di cui la tua attivitÃ  ha bisogno, in un solo punto"
             subtitle="Dalla vetrina online al gestionale su misura: tecnologia che lavora per te."
           />
           <Reveal delay={0.1}>
@@ -253,5 +252,10 @@ export const HomePage = () => {
       <CTABanner />
     </>
   );
+};
 
 export default HomePage;
+
+
+
+
