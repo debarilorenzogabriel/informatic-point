@@ -1,11 +1,11 @@
-import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+﻿import { useEffect } from "react";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import { Component, Suspense } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { useLenis } from "@/hooks/useLenis";
-import HomePage from "@/pages/HomePage";
+import HomePage from "@/pages/Homepage";
 import ServiziPage from "@/pages/ServiziPage";
 import PortfolioPage from "@/pages/PortfolioPage";
 import ChiSonoPage from "@/pages/ChiSonoPage";
@@ -31,7 +31,7 @@ class ErrorBoundary extends Component {
       return (
         <div className="flex min-h-screen items-center justify-center p-8 text-center">
           <p className="font-display text-lg text-ink">
-            Qualcosa è andato storto. Ricarica la pagina o contattami su WhatsApp.
+            Qualcosa Ã¨ andato storto. Ricarica la pagina o contattami su WhatsApp.
           </p>
         </div>
       );
@@ -44,7 +44,7 @@ const App = () => {
 
   return (
     <ErrorBoundary>
-      <BrowserRouter>
+      <HashRouter>
         <ScrollToTop />
         <a
           href="#contenuto"
@@ -68,9 +68,10 @@ const App = () => {
         </main>
         <Footer />
         <WhatsAppFloat />
-      </BrowserRouter>
+      </HashRouter>
     </ErrorBoundary>
   );
 };
 
 export default App;
+

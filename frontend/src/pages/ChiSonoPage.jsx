@@ -30,7 +30,7 @@ export const ChiSonoPage = () => {
             <Reveal delay={0.1}>
               <div className="mt-8 space-y-5 text-base leading-relaxed text-slate-600">
                 <p>
-                  Sono il fondatore di <strong className="text-ink">Informatic Point</strong>,
+                  Sono il fondatore del progetto <strong className="text-ink">Informatic Point</strong>,
                   un'attività di servizi informatici e digitali con sede a
                   Molfetta, nel cuore della Puglia. Aiuto privati, professionisti
                   e piccole imprese a usare la tecnologia in modo semplice:
@@ -45,8 +45,10 @@ export const ChiSonoPage = () => {
                   ma una relazione di fiducia costruita nel tempo.
                 </p>
                 <p>
-                  [Testo segnaposto: personalizza questa biografia con la tua
-                  storia, le tue certificazioni e la tua esperienza.]
+                  Sono Lorenzo, diplomato in Informatica presso l’Istituto Tecnico Industriale di Molfetta
+				  e attualmente lavoro come CAD Designer. Sto progettando Informatic Point per mettere le mie
+				  competenze tecniche al servizio di privati e attività locali, offrendo assistenza informatica,
+				  progettazione CAD e soluzioni digitali semplici e personalizzate.
                 </p>
               </div>
             </Reveal>

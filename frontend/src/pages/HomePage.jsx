@@ -10,7 +10,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import CTABanner from "@/components/CTABanner";
 
-const heroLines = ["La tecnologia che", "fa crescere", "la tua attivitÃ ."];
+const heroLines = ["La tecnologia che", "fa crescere", "la tua attività."];
 
 const lineVariants = {
   hidden: { y: "115%" },
@@ -21,26 +21,8 @@ const lineVariants = {
 };
 
 const Hero = () => (
-  <section className="relative overflow-hidden pt-[72px]">
+  <section className="relative overflow-hidden bg-paper pt-[72px]">
     {/* Scena 3D Spline come sfondo dell'hero */}
-    <div className="absolute inset-0 z-0" data-testid="hero-spline-background">
-      <spline-viewer
-        url="https://prod.spline.design/UWA8yeiXo12erFOG/scene.splinecode"
-        class="block h-full w-full"
-      />
-      <div
-        className="pointer-events-none absolute inset-0 bg-paper/85 lg:hidden"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-paper via-paper/70 to-transparent lg:block"
-        aria-hidden="true"
-      />
-      <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-paper via-transparent to-transparent"
-        aria-hidden="true"
-      />
-    </div>
 	
 <div className="relative z-10 mx-auto flex min-h-[620px] max-w-7xl items-center px-5 pb-16 pt-10 sm:px-8 sm:pt-14 lg:min-h-[calc(100vh-72px)] lg:pb-24 lg:pt-20">
       <div className="max-w-2xl">
@@ -51,7 +33,7 @@ const Hero = () => (
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand/30 bg-white/70 px-4 py-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-dark backdrop-blur"
           >
             <Sparkles className="h-3.5 w-3.5" />
-            Informatic Point Â· Molfetta (BA)
+            Informatic Point· Molfetta (BA)
           </motion.p>
 
           <h1
@@ -81,7 +63,7 @@ const Hero = () => (
           >
             Siti web, assistenza informatica, grafica, CAD e software su misura
             per privati, professionisti e piccole imprese. Un unico punto di
-            riferimento digitale â€” semplice, solido e affidabile.
+            riferimento digitale” semplice, solido e affidabile.
           </motion.p>
 
           <motion.div
@@ -117,7 +99,7 @@ const Hero = () => (
             className="mt-6 flex items-center gap-2 text-sm text-slate-600"
           >
             <ShieldCheck className="h-4 w-4 text-brand" />
-            Preventivo gratuito e senza impegno Â· Risposta rapida garantita
+            Preventivo gratuito e senza impegno· Risposta rapida garantita
           </motion.p>
         </div>
       </div>
@@ -131,7 +113,7 @@ const Why = () => (
       <div>
         <SectionHeading
           light
-          eyebrow="PerchÃ© Informatic Point"
+          eyebrow="Perchè Informatic Point"
           title="Un referente tecnico locale, non un help desk anonimo"
           subtitle="Mi trovi a Molfetta: lavoro con chi ha fiducia in un servizio umano, diretto e professionale."
         />
@@ -164,7 +146,7 @@ const Why = () => (
             className="relative aspect-[4/3] w-full rounded-[1.75rem] object-cover"
           />
           <div className="absolute bottom-5 left-5 rounded-full border border-white/20 bg-ink/80 px-4 py-2 font-mono text-[11px] uppercase tracking-[0.2em] text-paper backdrop-blur">
-            Molfetta Â· Puglia
+            Molfetta· Puglia
           </div>
         </div>
       </Reveal>
@@ -192,7 +174,7 @@ const Testimonials = () => (
               ))}
             </div>
             <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-slate-700">
-              â€œ{t.quote}â€
+              {t.quote}
             </blockquote>
             <figcaption className="mt-6 flex items-center gap-3 border-t border-slate-100 pt-5">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand to-iris font-display text-sm font-bold text-white">
@@ -225,7 +207,7 @@ const HomePage = () => {
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <SectionHeading
             eyebrow="Servizi"
-            title="Tutto ciÃ² di cui la tua attivitÃ  ha bisogno, in un solo punto"
+            title="Tutto ciò di cui la tua attività ha bisogno, in un solo punto"
             subtitle="Dalla vetrina online al gestionale su misura: tecnologia che lavora per te."
           />
           <Reveal delay={0.1}>

@@ -24,8 +24,8 @@ export const BUSINESS = {
   // NOTE: email segnaposto — sostituisci con la tua casella reale
   email: "info@informaticpoint.it",
   // NOTE: dati segnaposto — completa con i tuoi riferimenti fiscali
-  piva: "P.IVA / C.F. — da inserire",
-  legalOwner: "Titolare: [Nome Cognome] — da completare",
+  piva: "P.IVA / C.F. — Lavoratore autonomo occasionale (ex art. 2222 c.c.)",
+  legalOwner: "Titolare: Lorenzo Gabriel de Bari",
 };
 
 export const NAV_LINKS = [
@@ -234,7 +234,7 @@ export const PRIVACY_SECTIONS = [
     id: "titolare",
     title: "1. Titolare del trattamento",
     body: [
-      "Il titolare del trattamento dei dati personali è Informatic Point — [Nome Cognome], con sede a Molfetta (BA), contattabile all'indirizzo e-mail e ai recapiti indicati nella sezione «Contatti» del presente sito. [Completa questa sezione con i tuoi riferimenti fiscali.]",
+      "Il titolare del trattamento dei dati personali è Informatic Point — Lorenzo Gabriel del Bari, con sede a Molfetta (BA), contattabile all'indirizzo e-mail e ai recapiti indicati nella sezione «Contatti» del presente sito.",
     ],
   },
   {
@@ -278,7 +278,7 @@ export const PRIVACY_SECTIONS = [
     id: "aggiornamenti",
     title: "7. Aggiornamenti della policy",
     body: [
-      "La presente informativa può essere modificata in qualsiasi momento. Le modifiche verranno pubblicate su questa pagina con indicazione della data di aggiornamento. Ultimo aggiornamento: [data].",
+      "La presente informativa può essere modificata in qualsiasi momento. Le modifiche verranno pubblicate su questa pagina con indicazione della data di aggiornamento. Ultimo aggiornamento: 30/09/2026.",
     ],
   },
 ];
