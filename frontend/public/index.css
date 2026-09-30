@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 222 70% 10%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 192 91% 42%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-brand text-ink;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand/70 ring-offset-2 ring-offset-paper;
+  }
+}
+
+/* Lenis smooth scroll */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@layer utilities {
+  /* Subtle blueprint grid for light sections */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(10, 17, 40, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(10, 17, 40, 0.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  /* Dark section grid */
+  .bg-grid-dark {
+    background-image:
+      linear-gradient(to right, rgba(148, 205, 219, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 205, 219, 0.06) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+
+  .text-gradient {
+    background: linear-gradient(100deg, #06b6d4 10%, #38bdf8 45%, #8b5cf6 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  }
+}
+
+/* Hero kinetic line reveal */
+.line-mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+
+.line-mask > span {
+  display: block;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-float,
+  .animate-pulse-ring {
+    animation: none !important;
+  }
+}
