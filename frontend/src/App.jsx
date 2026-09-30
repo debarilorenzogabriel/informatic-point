@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { useLenis } from "@/hooks/useLenis";
-import HomePage from "@/pages/Homepage";
+import HomePage from "@/pages/HomePage";
 import ServiziPage from "@/pages/ServiziPage";
 import PortfolioPage from "@/pages/PortfolioPage";
 import ChiSonoPage from "@/pages/ChiSonoPage";
@@ -74,4 +74,5 @@ const App = () => {
 };
 
 export default App;
+
 
