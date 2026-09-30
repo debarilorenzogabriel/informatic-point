@@ -1,8 +1,8 @@
-/** @type {import('tailwindcss').Config} */
+﻿/** @type {import('tailwindcss').Config} */
 module.exports = {
     blocklist: ["overline"],
     darkMode: ["class"],
-    content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+    content: ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -72,3 +72,4 @@ module.exports = {
   },
   plugins: [require("tailwindcss-animate")],
 };
+
