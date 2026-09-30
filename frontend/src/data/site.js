@@ -22,7 +22,7 @@ export const BUSINESS = {
   phoneHref: "+393664366208",
   whatsappNumber: "393664366208",
   // NOTE: email segnaposto — sostituisci con la tua casella reale
-  email: "info@informaticpoint.it",
+  email: "debari.lorenzogabriel@gmail.com",
   // NOTE: dati segnaposto — completa con i tuoi riferimenti fiscali
   piva: "P.IVA / C.F. — Lavoratore autonomo occasionale (ex art. 2222 c.c.)",
   legalOwner: "Titolare: Lorenzo Gabriel de Bari",

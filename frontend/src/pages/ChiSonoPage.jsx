@@ -39,7 +39,7 @@ export const ChiSonoPage = () => {
                 </p>
                 <p>
                   Credo in un approccio diretto e umano: prima ti ascolto, poi
-                  ti propongo la soluzione più adatta — spiegata in parole
+                  ti propongo la soluzione più adatta spiegata in parole
                   chiare, senza gergo tecnico inutile. Il mio obiettivo è che tu
                   ottenga un risultato concreto e durevole, non solo un servizio
                   ma una relazione di fiducia costruita nel tempo.

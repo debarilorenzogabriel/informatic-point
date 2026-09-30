@@ -31,7 +31,7 @@ class ErrorBoundary extends Component {
       return (
         <div className="flex min-h-screen items-center justify-center p-8 text-center">
           <p className="font-display text-lg text-ink">
-            Qualcosa Ã¨ andato storto. Ricarica la pagina o contattami su WhatsApp.
+            Qualcosa è andato storto. Ricarica la pagina o contattami su WhatsApp.
           </p>
         </div>
       );

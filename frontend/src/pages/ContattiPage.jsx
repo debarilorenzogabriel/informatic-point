@@ -128,7 +128,7 @@ export const ContattiPage = () => {
                     data-testid="input-name"
                     type="text"
                     autoComplete="name"
-                    placeholder="Il tuo nome"
+                    placeholder="Lorenzo"
                     value={form.name}
                     onChange={set("name")}
                     className={inputClass(errors.name)}
@@ -149,7 +149,7 @@ export const ContattiPage = () => {
                     data-testid="input-email"
                     type="email"
                     autoComplete="email"
-                    placeholder="nome@esempio.it"
+                    placeholder="debari.lorenzogabriel@gmail.com"
                     value={form.email}
                     onChange={set("email")}
                     className={inputClass(errors.email)}
@@ -170,7 +170,7 @@ export const ContattiPage = () => {
                     data-testid="input-phone"
                     type="tel"
                     autoComplete="tel"
-                    placeholder="+39 …"
+                    placeholder="+393664366208"
                     value={form.phone}
                     onChange={set("phone")}
                     className={inputClass(errors.phone)}

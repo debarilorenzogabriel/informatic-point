@@ -10,7 +10,7 @@ import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 import CTABanner from "@/components/CTABanner";
 
-const heroLines = ["La tecnologia che", "fa crescere", "la tua attività."];
+const heroLines = ["La tecnologia che ", "fa crescere ", "la tua attività."];
 
 const lineVariants = {
   hidden: { y: "115%" },
@@ -22,8 +22,7 @@ const lineVariants = {
 
 const Hero = () => (
   <section className="relative overflow-hidden bg-paper pt-[72px]">
-    {/* Scena 3D Spline come sfondo dell'hero */}
-	
+  
 <div className="relative z-10 mx-auto flex min-h-[620px] max-w-7xl items-center px-5 pb-16 pt-10 sm:px-8 sm:pt-14 lg:min-h-[calc(100vh-72px)] lg:pb-24 lg:pt-20">
       <div className="max-w-2xl">
 	  <motion.p
