@@ -31,12 +31,18 @@ export const PrivacyPolicyPage = () => {
             <ul className="space-y-2 text-sm">
               {PRIVACY_SECTIONS.map((s) => (
                 <li key={s.id}>
-                  <a
-                    href={`#${s.id}`}
-                    className="text-slate-600 transition-colors hover:text-brand-dark"
-                  >
-                    {s.title}
-                  </a>
+				<button
+				  type="button"
+				  onClick={() => {
+					document.getElementById(s.id)?.scrollIntoView({
+					  behavior: "smooth",
+					  block: "start",
+					});
+				  }}
+				  className="text-left text-slate-600 transition-colors hover:text-brand-dark"
+				>
+				  {s.title}
+				</button>
                 </li>
               ))}
             </ul>
